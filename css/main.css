@@ -54,6 +54,15 @@ nav .nav-right-section img {
     margin-left: 1rem;
 }
 
+nav .nav-right-section a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-right-section a img:hover {
+    background-color: rgba(60,64,67,.08);
+    box-shadow: 0 1px 3px 1px rgba(66,64,67,.15), 0 1px 2px 0 rgba(60,64,67,.3);
+}
+
 main {
     margin-top: 15rem;
     text-align: center;
@@ -139,4 +148,41 @@ main .main-buttons button:hover {
     border: 0.1rem solid #c6c6c6;
     box-shadow: 0 0.1rem 0.1rem #000001;
     color: #222
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: #f2f2f2;
+    border-top: 0.1rem solid #e4e4e4;
+}
+
+footer ul {
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-content: start;
+}
+
+footer .footer-right{
+    justify-content: end;
+}
+
+footer ul li a {
+    margin: 1rem;
+    color: #5f6368;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }
